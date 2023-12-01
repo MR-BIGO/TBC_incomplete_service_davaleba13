@@ -7,10 +7,26 @@ data class Field(
     val id: Int,
     val hint: String,
     @SerializedName("field_type")
-    val type: String,
-    val keyboard: String? = null,
+    val type: TYPE,
+    val keyboard: KEYBOARD? = null,
     val required: Boolean,
     @SerializedName("is_active")
     val isActive: Boolean,
-    val icon: String
-)
+    val icon: String,
+) {
+    enum class TYPE {
+        @SerializedName("input")
+        INPUT,
+
+        @SerializedName("chooser")
+        CHOOSER
+    }
+
+    enum class KEYBOARD {
+        @SerializedName("text")
+        TEXT,
+
+        @SerializedName("number")
+        NUMBER
+    }
+}

@@ -18,5 +18,9 @@
         android:id="@+id/registeredFragment"
         android:name="com.example.tbc_incomplete_service_davaleba13.fragments.RegisteredFragment"
         android:label="fragment_registered"
-        tools:layout="@layout/fragment_registered" />
+        tools:layout="@layout/fragment_registered" >
+        <argument
+            android:name="fieldTexts"
+            app:argType="com.example.tbc_incomplete_service_davaleba13.models.MapIntString" />
+    </fragment>
 </navigation>

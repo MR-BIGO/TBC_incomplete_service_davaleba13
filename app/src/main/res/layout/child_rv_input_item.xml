@@ -3,10 +3,10 @@
     android:id="@+id/etField"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:layout_marginTop="10dp"
-    android:hint="fsdf"
     android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
     android:layout_marginEnd="10dp"
+    android:hint="fsdf"
     android:paddingStart="8dp"
     android:paddingEnd="8dp"
     android:textSize="18sp" />

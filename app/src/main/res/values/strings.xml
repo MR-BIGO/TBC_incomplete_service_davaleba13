@@ -5,4 +5,5 @@
     <string name="e_auth">E AUTH</string>
     <string name="register">Register</string>
     <string name="joke_for_sympathy_points">IF you close your eyes, you can just make out the assignment being done perfectly :)</string>
+    <string name="gender_prompt">Select Gender</string>
 </resources>

@@ -16,6 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        tools:listitem="@layout/child_rv_field_item" />
+        tools:listitem="@layout/child_rv_input_item" />
 
 </androidx.cardview.widget.CardView>

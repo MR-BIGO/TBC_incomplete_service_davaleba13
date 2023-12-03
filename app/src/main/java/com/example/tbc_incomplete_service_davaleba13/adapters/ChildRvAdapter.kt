@@ -50,14 +50,20 @@ class ChildRvAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
     }
 
-    inner class ChildRvChooserViewHolder(private val binding: ChildRvChooserItemBinding) :
+    inner class ChildRvChooserViewHolder(
+        private val binding: ChildRvChooserItemBinding,
+    ) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind() {
             val field = data[adapterPosition]
             with(binding) {
-                genderSpinner.id = field.id
-                genderSpinner.prompt = field.hint
-                fieldTexts[field.id] = ""
+                radioGroupGender.setOnCheckedChangeListener { _, _ ->
+                    if (maleRadioButton.isChecked) {
+                        fieldTexts[field.id] = "Male"
+                    } else if (femaleRadioButton.isChecked) {
+                        fieldTexts[field.id] = "Female"
+                    }
+                }
             }
         }
     }
